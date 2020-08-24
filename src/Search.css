@@ -1,0 +1,6 @@
+.search__input{
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    height: 30px;
+}
