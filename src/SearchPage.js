@@ -14,9 +14,9 @@ import MoreVertIcon from "@material-ui/icons/MoreVert";
 function SearchPage() {
   const [{ term }, dispatch] = useStateValue();
   // {Live api call}
-  // const { data } = useGoogleSearch(term);
-  const data = Response;
-  console.log(data);
+  const { data } = useGoogleSearch(term);
+  //const data = Response;
+
   return (
     <div className="searchPage">
       <div className="searchPage__header">
