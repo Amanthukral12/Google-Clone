@@ -71,10 +71,21 @@ function SearchPage() {
 
       {true && (
         <div className="searchPage__results">
-          <p className="searchPage_resultCount">
+          <p className="searchPage__resultCount">
             About {data?.searchInformation.formattedTotalResults} results (
-            {data?.searchInformation.formattedSearchTime} seconds) for Tesla
+            {data?.searchInformation.formattedSearchTime} seconds) for
           </p>
+          {data?.items.map((item) => (
+            <div className="searchPage__result">
+              <a className="searchPage__resultLink" href={item.link}>
+                <h4>{item.displayLink}</h4>
+              </a>
+              <a className="searchPage__resultTitle" href={item.title}>
+                <h3>{item.title}</h3>
+              </a>
+              <p className="searchPage__resultSnippet">{item.snippet}</p>
+            </div>
+          ))}
         </div>
       )}
     </div>

@@ -50,3 +50,39 @@
 .searchPage__option a {
   margin-left: 5px;
 }
+
+.searchPage__result {
+  margin: 20px 0;
+}
+
+.searchPage__resultCount {
+  color: #70737a;
+  font-size: 14px;
+}
+
+.searchPage__results {
+  max-width: 650px;
+  margin-top: 10px;
+  margin-left: 240px;
+  margin-bottom: 100px;
+}
+.searchPage__resultLink {
+  text-decoration: none;
+  color: #202124;
+}
+.searchPage__resultLink > h4 {
+  font-weight: 400;
+}
+
+.searchPage__resultTitle {
+  text-decoration: none;
+  color: #1a0dab;
+}
+
+.searchPage__resultTitle:hover {
+  text-decoration: underline;
+}
+.searchPage__resultTitle > h3 {
+  font-weight: 450;
+  font-size: 20px;
+}
